@@ -10,9 +10,11 @@
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid profile-mini-avatar"
                                 alt="{{ site.data.profile.primary_name }} portrait"
+                                {% if site.data.profile.portrait_caption %}
                                 data-toggle="tooltip" 
                                 data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
+                                title="{{ site.data.profile.portrait_caption }}"
+                                {% endif %}>
                         </div>
                         <div class="mb-3 d-md-none text-center">
                             <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle profile-mini-avatar-mobile" style="max-width: 50%;" alt="Portrait">

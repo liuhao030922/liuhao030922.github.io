@@ -31,8 +31,8 @@ short_bio: >-
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Add a photo credit here (optional, comment out to hide).
+# portrait_caption: >-
+#   Add a photo credit here (optional, comment out to hide).
 
 education:
 - school: University of Illinois Chicago
