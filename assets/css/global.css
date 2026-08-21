@@ -528,13 +528,13 @@ a:hover {
 }
 
 .publication-item .abstract-links a {
-    color: var(--ink-main);
+    color: var(--link-sky);
     font-weight: 500;
     text-decoration: underline;
 }
 
 .publication-item .abstract-links a:hover {
-    color: var(--ink-main);
+    color: var(--link-sky-hover);
     text-decoration: underline;
 }
 
