@@ -11,4 +11,6 @@ authors:
   - Yanze Zhang
   - Yiwei Lyu
   - Wenhao Luo
+links:
+  Project: https://wenhaol.github.io/Time_Aggregated_Connectivity/
 ---
