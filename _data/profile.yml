@@ -24,8 +24,8 @@ short_bio: >-
     I am Hao Liu, a first-year Ph.D. student in Computer Science at the
     <a href="https://cs.uic.edu/" target="_blank">University of Illinois Chicago</a>. I received my bachelor's degree in Automation from
     <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a> in 2025.
-    I also spent one semester at
-    <a href="https://www.ku.ac.ae/" target="_blank">Khalifa University</a> in Fall 2024.
+    I am advised by Prof. <a href="https://lanzhiling.github.io/" target="_blank">Zhiling Lan</a>.
+    My research interests include Large-scale AI systems, efficient LLM serving, and scalable AI infrastructure.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -48,7 +48,6 @@ education:
 - school: Khalifa University
   logos:
     - /assets/images/education/khalifa.png
-  detail: Exchange Semester
   program: Visiting Student
   date: Fall 2024
 
