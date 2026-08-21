@@ -12,5 +12,5 @@ authors:
   - Wenhao Luo
 links:
   Paper: https://arxiv.org/abs/2606.01526
-  Project: https://liuhao030922.github.io/results_spatio-temporal/
+  Website: https://liuhao030922.github.io/results_spatio-temporal/
 ---

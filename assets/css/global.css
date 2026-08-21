@@ -530,7 +530,7 @@ a:hover {
 .publication-item .abstract-links a {
     color: var(--ink-main);
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .publication-item .abstract-links a:hover {
