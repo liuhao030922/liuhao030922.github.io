@@ -40,21 +40,18 @@ portrait_url: /assets/images/photos/portrait.jpg
 
 education:
 - school: University of Illinois Chicago
-  url: https://cs.uic.edu/
   logos:
     - /assets/images/education/uic.png
   detail: Department of Computer Science
   program: Ph.D. Student
   date: Sep. 2025 - Present
 - school: Sichuan University
-  url: https://www.scu.edu.cn/
   logos:
     - /assets/images/education/sichuan.png
   detail: College of Electrical Engineering
   program: BEng in Automation
   date: Sep. 2021 - Jun. 2025
 - school: Khalifa University
-  url: https://www.ku.ac.ae/
   logos:
     - /assets/images/education/khalifa.png
   program: Visiting Student
