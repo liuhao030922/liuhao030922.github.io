@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% assign site_description = page.description | default: site.data.profile.description %}
+    {% if site_description %}
+    <meta name="description" content="{{ site_description | strip_html | strip_newlines | escape }}">
+    {% endif %}
     <title>Hao Liu's homepage</title>
     <link rel="icon" type="image/jpeg" href="{{ site.data.profile.portrait_url | relative_url }}">
     <link rel="apple-touch-icon" href="{{ site.data.profile.portrait_url | relative_url }}">

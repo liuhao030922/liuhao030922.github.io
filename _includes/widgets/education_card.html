@@ -4,19 +4,26 @@
     <h6 class="p-3 mb-0 border-bottom border-gray">Education</h6>
     <div class="px-3 py-2">
         {% for item in education_items %}
+        {% assign school_name = item.school | default: item.name %}
         <div class="education-item {% unless forloop.last %}border-bottom border-gray{% endunless %}">
             <div class="education-head-row">
                 <div class="education-school-wrap">
                     <div class="education-logos">
                         {% if item.logos and item.logos.size > 0 %}
                             {% for logo in item.logos %}
-                            <img src="{{ logo | relative_url }}" alt="{{ item.school | default: item.name }} logo" class="education-logo-img">
+                            <img src="{{ logo | relative_url }}" alt="{{ school_name }} logo" class="education-logo-img">
                             {% endfor %}
                         {% elsif item.logo %}
-                            <img src="{{ item.logo | relative_url }}" alt="{{ item.school | default: item.name }} logo" class="education-logo-img">
+                            <img src="{{ item.logo | relative_url }}" alt="{{ school_name }} logo" class="education-logo-img">
                         {% endif %}
                     </div>
-                    <div class="education-school">{{ item.school | default: item.name }}</div>
+                    <div class="education-school">
+                        {% if item.url %}
+                        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ school_name }}</a>
+                        {% else %}
+                        {{ school_name }}
+                        {% endif %}
+                    </div>
                 </div>
                 <div class="education-date"><em>{{ item.date }}</em></div>
             </div>
