@@ -1,0 +1,23 @@
+{% assign service_items = site.data.profile.service %}
+{% if service_items and service_items.size > 0 %}
+<div class="my-3 bg-white shadow-sm rounded-xl content-card service-card">
+    <h6 class="p-3 mb-0 border-bottom border-gray">Review Service</h6>
+    <div class="px-3 py-2">
+        {% for item in service_items %}
+        <div class="service-item {% unless forloop.last %}border-bottom border-gray{% endunless %}">
+            <div class="service-detail">
+                {% if item.venues %}
+                <ul class="service-venue-list">
+                    {% for venue in item.venues %}
+                    <li>{{ venue }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                {{ item.detail }}
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

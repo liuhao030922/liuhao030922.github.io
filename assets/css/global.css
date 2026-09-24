@@ -538,7 +538,8 @@ a:hover {
     text-decoration: underline;
 }
 
-.education-card h6 {
+.education-card h6,
+.service-card h6 {
     font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.03rem;
     font-weight: 800;
@@ -546,11 +547,13 @@ a:hover {
     text-transform: uppercase;
 }
 
-.education-item {
+.education-item,
+.service-item {
     padding: 0.4rem 0.22rem;
 }
 
-.education-head-row {
+.education-head-row,
+.service-head-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -583,11 +586,35 @@ a:hover {
     object-fit: contain;
 }
 
-.education-detail {
+.education-detail,
+.service-detail {
     margin-top: 0.04rem;
     color: var(--ink-soft);
     font-size: 0.78rem;
     line-height: 1.25;
+}
+
+.service-detail {
+    color: var(--ink-main);
+    font-size: 0.91rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.service-venue-list {
+    margin: 0;
+    padding-left: 1.28rem;
+}
+
+.service-venue-list li {
+    font-size: 0.91rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 0.12rem;
+}
+
+.service-venue-list li:last-child {
+    margin-bottom: 0;
 }
 
 .education-program-inline {
@@ -595,7 +622,8 @@ a:hover {
     font-weight: 500;
 }
 
-.education-date {
+.education-date,
+.service-date {
     color: #2d2d2d;
     font-size: 0.79rem;
     white-space: nowrap;
@@ -766,13 +794,15 @@ div.lazy {
         font-size: 1rem;
     }
 
-    .education-head-row {
+    .education-head-row,
+    .service-head-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.08rem;
     }
 
-    .education-date {
+    .education-date,
+    .service-date {
         white-space: normal;
     }
 
