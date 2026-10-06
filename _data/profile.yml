@@ -61,8 +61,8 @@ service:
 - venues:
     - IEEE Robotics and Automation Letters (RA-L)
     - IEEE Control Systems Letters (L-CSS)
-    - Automatica
     - IEEE International Conference on Robotics and Automation (ICRA)
+    - Automatica
 
 
 
